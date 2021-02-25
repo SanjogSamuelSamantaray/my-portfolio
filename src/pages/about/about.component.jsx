@@ -25,15 +25,14 @@ const About = () => {
                         <Row>
                             {/* description section*/}
                             Hi there! I am <strong>&nbsp;Sanjog Samuel Samantaray</strong>
-                            <br />A passionate programmer and a Coach, born and brought up in India. I am a Full Stack Web Developer with React.js, Redux, Express.js, Node.js, and PostgreSQL as my tech stack.
+                            <br />A passionate programmer and an enthusiatic learner, born and brought up in Odisha. I'm a web developer who loves to take problems as a challenge, dig into new concepts and solve problems.
+                            <br /><br /> 
+                            Currently, I'm doing my Engineering with specialization in 'Computer Science and Engineering'.
+                            <br /><br />
+                            Learning new things and knowing how things really work is what fascinates me and gives me joy. Be it tech or non tech, I love to explore things and give a shot to what seems interesting to me.
+                            <br /><br/>
+                            I'm a self motivating person and also motivate others to achieve their goals. I'm a workahoilic person who loves to take leads and execute responsibilities. Working in a team is what I look forward to.
                             <br />
-                            In 2019, I successfully completed my Engineering with specialization in 'Electronics and Telecommunication'.
-                            <br />
-                            Working with the clients, my goal is always driven towards providing amazing experience with the best level of quality and service to them.
-                            <br />
-                            Along with that, I also help people as a COACH on their journey of becoming a professional programmer. 
-                            <br />I love learning about new technologies, what problems are they solving and How can I use them to build better and scalable products.
-                            <br /> <br />
                         </Row>
 
                         <Row>

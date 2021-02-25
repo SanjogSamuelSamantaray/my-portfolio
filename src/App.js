@@ -8,10 +8,12 @@ import MyNavbar from "./components/my-navbar/navbar.component.jsx";
 import MyCarousel from "./components/my-carousel/my-carousel.component.jsx";
 import TitleMessage from "./components/title-message/title-message.component.jsx";
 import About from "./pages/about/about.component.jsx";
+import Skills from "./pages/skills/skill.component.jsx";
 
 import Fade from "react-reveal/Fade";
 import { Parallax } from "react-parallax";
 import Container from "react-bootstrap/Container";
+
 
 const App = () => {
   return (
@@ -28,6 +30,14 @@ const App = () => {
             </Container>
         </Parallax>
       </div>
+      <div>
+        <Container className="container-box rounded">
+          <Fade duration={500}>
+              <Skills/>
+          </Fade>
+        </Container>
+      </div>
+      
     </div>
   );
 }
