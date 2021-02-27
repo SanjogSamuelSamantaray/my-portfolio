@@ -9,8 +9,10 @@ import MyCarousel from "./components/my-carousel/my-carousel.component.jsx";
 import TitleMessage from "./components/title-message/title-message.component.jsx";
 import About from "./pages/about/about.component.jsx";
 import Skills from "./pages/skills/skill.component.jsx";
+import Experience from "./pages/experience/experience.component.jsx";
 
 import Fade from "react-reveal/Fade";
+import Slide from "react-reveal/Slide";
 import { Parallax } from "react-parallax";
 import Container from "react-bootstrap/Container";
 
@@ -30,11 +32,20 @@ const App = () => {
             </Container>
         </Parallax>
       </div>
+
       <div>
         <Container className="container-box rounded">
-          <Fade duration={500}>
+          <Slide bottom duration={500}>
               <Skills/>
-          </Fade>
+          </Slide>
+        </Container>
+      </div>
+
+      <div>
+        <Container className="container-box rounded">
+          <Slide bottom duration={500}>
+              <Experience/>
+          </Slide>
         </Container>
       </div>
       
