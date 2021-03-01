@@ -10,6 +10,7 @@ import TitleMessage from "./components/title-message/title-message.component.jsx
 import About from "./pages/about/about.component.jsx";
 import Skills from "./pages/skills/skill.component.jsx";
 import Experience from "./pages/experience/experience.component.jsx";
+import Projects from "./components/project-timeline/project-timeline.component.jsx";
 
 import Fade from "react-reveal/Fade";
 import Slide from "react-reveal/Slide";
@@ -43,8 +44,16 @@ const App = () => {
 
       <div>
         <Container className="container-box rounded">
-          <Slide bottom duration={500}>
+          <Fade bottom duration={500}>
               <Experience/>
+          </Fade>
+        </Container>
+      </div>
+
+      <div>
+        <Container className="container-box rounded">
+          <Slide bottom duration={500}>
+              <Projects/>
           </Slide>
         </Container>
       </div>
