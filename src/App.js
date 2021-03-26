@@ -1,5 +1,6 @@
 import React from 'react'
 import './App.css';
+import './assets/css/fonts.css'
 
 import BgImage from "./assets/img/parallex/background.webp";
 
@@ -24,7 +25,7 @@ import { particlesOptions } from "./particlesOptions";
 
 const App = () => {
   return (
-    <div className="App" style={{ position: "relative" }}>
+    <div className="App" style={{ position: "relative"  }}>
       <MyNavbar />
       <MyCarousel />
       <TitleMessage />

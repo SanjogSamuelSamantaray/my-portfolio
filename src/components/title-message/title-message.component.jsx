@@ -14,14 +14,15 @@ const MyTitleMessage = styled.h1`
   }
   div {
     color: ${props => props.theme.textColor};
-    text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.4);
-    font-weight: 100;
-    letter-spacing: 7px;
+    text-shadow: 0px 5px 5px rgba(0, 0, 0, 0.4);
+    font-weight: 300;
+    font-family: 'Playfair Display', serif;
+    letter-spacing: 4px;
     .main {
       font-size: 50px;
     }
     .sub {
-      font-size: 27px;
+      font-size: 35px;
       letter-spacing: 2px;
     }
   }
@@ -45,7 +46,7 @@ const TitleMessage = () => {
                         strings: ["Web Developer", "Motivator", "Learner"],
                         autoStart: true,
                         loop: true,
-                        delay: 50
+                        delay: 100
                         }}
                     />
                     </div>

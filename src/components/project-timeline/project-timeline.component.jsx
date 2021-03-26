@@ -31,7 +31,7 @@ import L_MATERIALUI from "../../assets/img/skills/material-ui-1.svg";
 
 const Projects = () => {
     return (
-        <div id="projects">
+        <div id="project">
             <h1 className="pt-3 text-center font-details-b pb-3">PROJECTS</h1>
                 <Timeline>
                     <Events>
