@@ -5,7 +5,7 @@ import "./footer.style.css"
 const Footer = () => {
     return (
         <div>
-            <div className="py-2 text-center footer-style">© Sanjog Samuel Samantaray &nbsp; {new Date().getFullYear()}</div>
+            <div className="py-2 text-center footer-style">© Sanjog Samuel Samantaray&nbsp; {new Date().getFullYear()}</div>
         </div>
     )
 }

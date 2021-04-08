@@ -10,7 +10,7 @@ import "./contact.style.css";
 const Contact = () => {
     return (
         <div id="contact">
-            <h1 className="pt-3 text-center font-details-b pb-3">CONTACT ME</h1>
+            <h1 className="pt-3 text-center font-details-b pb-3" style={{fontFamily: 'Playfair Display, serif'}}>CONTACT ME</h1>
             <Jumbotron className="contact-jumbotron">
                 <Row>
                 <Col className="d-flex justify-content-center flex-wrap">

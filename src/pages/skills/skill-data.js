@@ -20,6 +20,8 @@ import L_HEROKU from "../../assets/img/skills/heroku.svg";
 import L_DIGITAL_OCEAN from "../../assets/img/skills/digital-ocean.svg";
 import L_GITHUB_PAGES from "../../assets/img/skills/github.svg";
 import L_JAVASCRIPT from "../../assets/img/skills/javascript.svg";
+import L_JAVA from "../../assets/img/skills/java.png";
+import L_C from "../../assets/img/skills/c.webp";
 import L_TYPESCRIPT from "../../assets/img/skills/typescript.svg";
 import L_GOLANG from "../../assets/img/skills/go-6.svg";
 import L_PYTHON from "../../assets/img/skills/python.svg";
@@ -78,12 +80,12 @@ export const skills = {
         imgSrc: L_NODE_JS,
         skillName: "Node.js",
       },
-      {
-        link: "https://expressjs.com/",
-        imgAltText: "Express",
-        imgSrc: L_EXPRESS,
-        skillName: "Express",
-      },
+      // {
+      //   link: "https://expressjs.com/",
+      //   imgAltText: "Express",
+      //   imgSrc: L_EXPRESS,
+      //   skillName: "Express",
+      // },
       {
         link: "https://www.djangoproject.com/",
         imgAltText: "Django",
@@ -92,12 +94,12 @@ export const skills = {
       },
     ],
     hostingPlatforms: [
-      {
-        link: "https://www.heroku.com/",
-        imgAltText: "Heroku",
-        imgSrc: L_HEROKU,
-        skillName: "Heroku",
-      },
+      // {
+      //   link: "https://www.heroku.com/",
+      //   imgAltText: "Heroku",
+      //   imgSrc: L_HEROKU,
+      //   skillName: "Heroku",
+      // },
       {
         link: "https://pages.github.com/",
         imgAltText: "GitHub Pages",
@@ -107,16 +109,22 @@ export const skills = {
     ],
     programmingLanguages: [
       {
-        link: "https://www.javascript.com/",
-        imgAltText: "JavaScript",
-        imgSrc: L_JAVASCRIPT,
-        skillName: "JavaScript",
-      }, 
-      {
         link: "https://www.python.org/",
         imgAltText: "Python",
         imgSrc: L_PYTHON,
         skillName: "Python",
+      },
+      {
+        link: "https://www.cprogramming.com",
+        imgAltText: "C",
+        imgSrc: L_C,
+        skillName: "C",
+      },
+      {
+        link: "https://www.java.com",
+        imgAltText: "Java",
+        imgSrc: L_JAVA,
+        skillName: "Java",
       },
     ],
     databases: [

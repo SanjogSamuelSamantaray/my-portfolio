@@ -3,45 +3,39 @@ import { Timeline, Events, UrlButton, ImageEvent } from "@merc/react-timeline";
 
 import "./project-timeline.style.css";
 // projects
-import L_ReactToDoList from "../../assets/img/projects/React_ToDo_List.webp";
-import L_MernTipCalc from "../../assets/img/projects/mern_tip_calc.webp";
-import L_GetGitHubInfo from "../../assets/img/projects/get_github_info.webp";
-import L_SmartBrain from "../../assets/img/projects/brain.webp";
-import L_RoboFriends from "../../assets/img/projects/Robofriends.webp";
-import L_ProductHuntClone from "../../assets/img/projects/product_hunt_clone.webp";
-import L_PortfolioUsingDjango from "../../assets/img/projects/portfolioUsingDjango.webp";
+import covid from "../../assets/img/projects/covid.png";
+import Cardio from "../../assets/img/projects/cardio.png";
+
 import Accordion from "react-bootstrap/Accordion";
 import Card from "react-bootstrap/Card";
 
 // skills
 import L_REACT from "../../assets/img/skills/react.svg";
+import node_red from "../../assets/img/skills/node-red.png";
+import aws from "../../assets/img/skills/aws.png";
 import L_NODE_JS from "../../assets/img/skills/nodejs.svg";
-import L_EXPRESS from "../../assets/img/skills/express.svg";
-import L_POSTGRESQL from "../../assets/img/skills/postgresql.svg";
+import Django from "../../assets/img/skills/django.png";
 import L_MONGODB from "../../assets/img/skills/mongodb.svg";
 import Image from "react-bootstrap/Image";
 import L_REDUX from "../../assets/img/skills/redux.svg";
 import L_HTML5 from "../../assets/img/skills/html-5.svg";
 import L_CSS3 from "../../assets/img/skills/css3.svg";
-import L_BOOTSTRAP4 from "../../assets/img/skills/bootstrap-4.svg";
-import L_DJANGO from "../../assets/img/skills/django.svg";
-import L_DIGITAL_OCEAN from "../../assets/img/skills/digital-ocean.svg";
-import L_GIT from "../../assets/img/skills/github-api.svg";
 import L_MATERIALUI from "../../assets/img/skills/material-ui-1.svg";
 
 const Projects = () => {
     return (
         <div id="project">
-            <h1 className="pt-3 text-center font-details-b pb-3">PROJECTS</h1>
+            <h1 className="pt-3 text-center font-details-b pb-3" style={{fontFamily: 'Playfair Display, serif'}}>PROJECTS</h1>
                 <Timeline>
                     <Events>
-                    {/* Project: Todo List With MUI */}
+                    {/* Project: cardiomate */}
                         <ImageEvent
-                            date="01/10/2020"
+                            date="01/09/2020 - 01/02/2021"
                             className="text-center"
-                            text="React ToDo App"
-                            src={L_ReactToDoList}
-                            alt="React ToDo App"
+                            text="Cardiomate"
+                            src={Cardio}
+                            style="height:50px;"
+                            alt="Cardiomate"
                         >
                             <div className="d-flex justify-content-between flex-column mt-1">
                             <div>
@@ -50,20 +44,19 @@ const Projects = () => {
                                     <Accordion.Toggle
                                     as={Card.Header}
                                     eventKey="0"
-                                    className="p-2 text-center accordian-main"
-                                    >
+                                    className="p-2 text-center accordian-main">
                                     PROJECT DETAILS
                                     </Accordion.Toggle>
 
                                     <Accordion.Collapse eventKey="0" className="text-left">
                                     <Card.Body>
-                                        <strong>Description:</strong> This is a Todo App created with React and Material UI that keeps a track of your Todos
+                                        <strong>Description:</strong> This Django based application along with use of data science can predict the possible diseases in a person by analyzing the ECG and PCG signals of a Human heart.
                                         <hr />
                                         <strong>Features:</strong>
                                         <ul className="list-styles pt-1">
-                                        <li>Keeps track of your Todos</li>
-                                        <li>Powered by React and Material UI</li>
-                                        <li>Respoisive Design</li>
+                                        <li>Real time plotting of ECG and PCG signals of the human heart.</li>
+                                        <li>Disease prediction using Data science</li>
+                                        <li>Generate report with relevant patient's data</li>
                                         </ul>
                                         <hr />
                                         <strong>Tech used:</strong>
@@ -93,33 +86,22 @@ const Projects = () => {
                                         <li>
                                             <span className="p-2">
                                             <Image
-                                                src={L_REACT}
-                                                alt="React"
+                                                src={Django}
+                                                alt="Django"
                                                 rounded
                                                 className="image-style1 m-1"
                                             ></Image>{" "}
-                                            React
+                                            Django
                                             </span>
                                         </li>
-                                        <li>
-                                            <span className="p-2">
-                                            <Image
-                                                src={L_MATERIALUI}
-                                                alt="Material-UI"
-                                                rounded
-                                                className="image-style1 m-1"
-                                            ></Image>{" "}
-                                            Material-UI
-                                            </span>
-                                        </li>
-                                        
+                                       
                                         </ul>
                                     </Card.Body>
                                     </Accordion.Collapse>
                                 </Card>
                                 </Accordion>
                             </div>
-                            <div className="d-flex justify-content-between flex-nowrap text-center">
+                            {/* <div className="d-flex justify-content-between flex-nowrap text-center">
                                 <UrlButton
                                 href="https://akjha96.github.io/Todo-List-React/"
                                 target="_blank"
@@ -138,17 +120,17 @@ const Projects = () => {
                                 >
                                 WATCH VIDEO
                                 </UrlButton>
-                            </div>
+                            </div> */}
                             </div>
                         </ImageEvent>
 
-                        {/* Project: MERN Tip Calculator */}
+                        {/* Project: COVID Patient Alert System */}
                         <ImageEvent
-                                    date="16/09/2020"
+                                    date="16/06/2020 - 30/06/2020"
                                     className="text-center"
-                                    text="MERN Tip Calculator"
-                                    src={L_MernTipCalc}
-                                    alt="MERN Tip Calculator"
+                                    text="COVID CPAS"
+                                    src={covid}
+                                    alt="COVID CPAS"
                                 >
                                     <div className="d-flex justify-content-between flex-column mt-1">
                                     <div>
@@ -164,14 +146,12 @@ const Projects = () => {
 
                                             <Accordion.Collapse eventKey="0" className="text-left">
                                             <Card.Body>
-                                                <strong>Description:</strong> This app calculates Tip for the amount entered and percentage of tip to be given.
-                                                It uses MERN stack build to acomplish the same.
+                                                <strong>Description:</strong> The IoT based system helps to regularly update the dashboard by uploading body temperature in regular intervals. It will send notifications to the people who have subscribed to your channel(using AWS publisher and Subscriber feature) if your body temp. rises above 100&#176;C informing them that they should go for a COVID check-up (using SNS service of Amazon).
                                                 <hr />
                                                 <strong>Features:</strong>
                                                 <ul className="list-styles pt-1">
-                                                <li>Enter amount upto your desire</li>
+                                                <li>SNS feature of Amazon</li>
                                                 <li>Real-time API calls with Backend features</li>
-                                                <li>Styled with  Material-UI</li>
                                                 </ul>
                                                 <hr />
                                                 <strong>Tech used:</strong>
@@ -179,12 +159,12 @@ const Projects = () => {
                                                 <li>
                                                     <span className="p-2">
                                                     <Image
-                                                        src={L_REACT}
-                                                        alt="React"
+                                                        src={node_red}
+                                                        alt="node-red"
                                                         rounded
                                                         className="image-style1 m-1"
                                                     ></Image>{" "}
-                                                    React
+                                                    Node-Red
                                                     </span>
                                                 </li>
                                                 <li>
@@ -201,43 +181,22 @@ const Projects = () => {
                                                 <li>
                                                     <span className="p-2">
                                                     <Image
-                                                        src={L_EXPRESS}
-                                                        alt="Express"
+                                                        src={aws}
+                                                        alt="aws"
                                                         rounded
                                                         className="image-style1 m-1"
                                                     ></Image>{" "}
-                                                    Express
+                                                    AWS
                                                     </span>
                                                 </li>
-                                                <li>
-                                                    <span className="p-2">
-                                                    <Image
-                                                        src={L_MONGODB}
-                                                        alt="MongoDB"
-                                                        rounded
-                                                        className="image-style1 m-1"
-                                                    ></Image>{" "}
-                                                    MongoDB
-                                                    </span>
-                                                </li>
-                                                <li>
-                                                    <span className="p-2">
-                                                    <Image
-                                                        src={L_MATERIALUI}
-                                                        alt="Material-UI"
-                                                        rounded
-                                                        className="image-style1 m-1"
-                                                    ></Image>{" "}
-                                                    Material-UI
-                                                    </span>
-                                                </li>
+                                                
                                                 </ul>
                                             </Card.Body>
                                             </Accordion.Collapse>
                                         </Card>
                                         </Accordion>
                                     </div>
-                                    <div className="d-flex justify-content-between flex-nowrap text-center">
+                                    {/* <div className="d-flex justify-content-between flex-nowrap text-center">
                                         <UrlButton
                                         href="https://github.com/akjha96/MernTipCaculator-FrontEnd"
                                         target="_blank"
@@ -250,7 +209,7 @@ const Projects = () => {
                                         >
                                         WATCH VIDEO
                                         </UrlButton>
-                                    </div>
+                                    </div> */}
                                     </div>
                                 </ImageEvent>
                     </Events>

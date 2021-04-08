@@ -35,7 +35,7 @@ const App = () => {
       <div>
         <Parallax blur={{ min: -30, max: 30 }} bgImage={BgImage} bgImageAlt="" strength={-200}>
             <Container className="container-box rounded">
-              <Fade duration={500}>
+              <Fade bottom duration={500}>
                 <About />
               </Fade>
             </Container>
@@ -44,7 +44,7 @@ const App = () => {
 
       <div>
         <Container className="container-box rounded">
-          <Slide bottom duration={500}>
+          <Slide bottom duration={1000}>
           <hr />
               <Skills/>
           </Slide>
@@ -53,7 +53,7 @@ const App = () => {
 
       <div>
         <Container className="container-box rounded">
-          <Fade bottom duration={500}>
+          <Fade bottom duration={1000}>
           <hr />
             <Experience/>
           </Fade>
@@ -62,7 +62,7 @@ const App = () => {
 
       <div>
         <Container className="container-box rounded">
-          <Slide bottom duration={500}>
+          <Slide bottom duration={1000}>
           <hr />
             <Projects/>
           </Slide>
@@ -71,7 +71,7 @@ const App = () => {
       
       <div>
         <Container className="container-box rounded">
-          <Fade bottom duration={500}>
+          <Fade bottom duration={1000} bottom>
             <hr />
             <Contact/>
           </Fade>
@@ -79,7 +79,9 @@ const App = () => {
       </div>
 
       <hr/>
+      <Fade bottom duration={500}>
       <Footer/>
+      </Fade>
 
     </div>
   );
